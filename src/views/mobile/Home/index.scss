@@ -1,0 +1,228 @@
+.mp-home-container {
+  overflow-y: auto;
+  .green-line{
+    width: 0.02rem;
+    background: #3fb68b;
+    height: 0.36rem;
+    opacity: .4;
+  }
+
+  .red-line{
+    width: 0.02rem;
+    background: #ff5353;
+    height: 0.36rem;
+    opacity: .4;
+  }
+
+  .card-item{
+    color: #c3c2d4;
+    height: 68px;
+    min-height: 68px;
+    border-bottom: none;
+    margin-bottom: 0.24rem;
+    border-radius: 0.24rem;
+    padding: 0.24rem 0.32rem;
+    background: linear-gradient(227.14deg,rgba(87,255,195,.16) 1.6%,rgba(87,255,195,0) 63.87%),linear-gradient(342.62deg,#23222e -9.23%,#303047 110.36%);
+  }
+  .trading-pair-details{
+    display: flex;
+    min-height: 1.2rem;
+    max-height: 1.2rem;
+    border-bottom: 0.02rem solid #2d2d3d;
+    white-space: nowrap;
+    .line{
+      width: 0.02rem;
+      height: 0.48rem;
+      background: #2d2d3d;
+    }
+  }
+  .trading-pair-select-list{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    background-color: #1c1c28;
+
+    .trading-pair-item{
+      padding:0 0.32rem;
+      color: #f7f7f7;
+      background-color: #171722;
+      border-bottom: 0.02rem solid #2d2d3d;
+      height: 1.2rem;
+      width: 100%;
+    }
+    .bottom-opt{
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 1.2rem;
+      border-top: 0.02rem solid #2d2d3d;
+      .line{
+        width: 0.02rem;
+        height: 0.86rem;
+        background: #2d2d3d;
+      }
+    }
+  }
+
+  .account-content{
+    width: 100%;
+    height: 6rem;
+    color: #c3c2d4;
+    padding: 0.24rem;
+
+    .trade-opt-content {
+
+      .sell-buy-tab {
+        display: flex;
+        position: relative;
+        height: 0.8rem;
+        width: 100%;
+        border-radius: 0.12rem;
+        background-color: #171722;
+        cursor: pointer;
+
+        .item {
+          width: 50%;
+          height: 100%;
+          line-height: 0.8rem;
+          font-size: 0.28rem;
+          text-align: center;
+          color: #6f6e84;
+          transition: color .2s ease-in-out;
+
+          &:first-child.active {
+            transition: all .2s ease-in-out;
+            border: 0.04rem solid #ff5353;
+            background-color: #232334;
+            border-radius: 0.12rem;
+            color: #ff5353;
+          }
+
+          &:last-child.active {
+            transition: all .2s ease-in-out;
+            border: 0.04rem solid #3fb68b;
+            background-color: #232334;
+            border-radius: 0.12rem;
+            color: #3fb68b;
+          }
+        }
+      }
+
+      .input-content {
+        font-size: 0.32rem;
+        line-height: 0.4rem;
+        height:  0.8rem;
+        min-height:  0.8rem;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 0.12rem;
+        padding-left: 0.24rem;
+        overflow: hidden;
+        background-color: #232334;
+        align-items: center;
+
+        input {
+          color: #f7f7f7;
+          background-color: #232334;
+          border: none;
+        }
+      }
+      .total-content{
+        border-radius: 0.16rem;
+        font-weight: 500;
+        background: #171722;
+        .submit-btn{
+          background: #303044;
+          color: #ffffff;
+          width: 100%;
+          text-align: center;
+          font-size: 0.3rem;
+          line-height: 0.8rem;
+          height: 0.8rem;
+          border-radius: 0.16rem;
+        }
+      }
+    }
+  }
+  .handicap-content{
+    padding: 0.24rem;
+    color: #c3c2d4;
+    height: 6rem;
+    overflow: hidden;
+
+    .usd-btn {
+      margin-left: 0.08rem;
+      padding: 0.06rem 0.12rem;
+      background: #303044;
+      letter-spacing: 0.04rem;
+      border-radius: 0.04rem;
+      font-size: 0.24rem;
+      color: #c3c2d4;
+    }
+  }
+
+  .order-content{
+    padding: 0.24rem;
+    color: #c3c2d4;
+    height: 6rem;
+    overflow: hidden;
+    .usd-btn {
+      margin-left: 0.08rem;
+      padding: 0.06rem 0.12rem;
+      background: #303044;
+      letter-spacing: 0.04rem;
+      border-radius: 0.04rem;
+      font-size: 0.24rem;
+      color: #c3c2d4;
+    }
+  }
+  .tab-bg{
+    color: #6f6e84;
+    background-color: transparent;
+    border-radius: 0.16rem;
+    padding: 0.2rem;
+    cursor: pointer;
+  }
+  .tab-bg-check{
+    color: #f7f7f7;
+    background-color: #12121a;
+    border-radius: 0.16rem;
+    padding: 0.2rem;
+    cursor: pointer;
+  }
+
+  .tab-list {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 0.88rem;
+    width: 100%;
+    font-size: 0.28rem;
+    border-bottom: 0.02rem solid #2d2d3d;
+    border-top: 0.02rem solid #2d2d3d;
+
+    .tab-item {
+      font-size: 0.28rem;
+      color: #6f6e84;
+      width: 25%;
+      line-height: 0.88rem;
+      text-align: center;
+      cursor: pointer;
+      height: 100%;
+      border-right: 0.02rem solid #2d2d3d;
+      background: #1c1c28;
+      &:last-child{
+        border-right: none;
+      }
+
+    }
+
+    .tab-item.active {
+      background-color: #171722;
+      color: #f7f7f7;
+      position: relative;
+    }
+
+  }
+}

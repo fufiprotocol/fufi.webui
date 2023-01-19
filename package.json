@@ -1,0 +1,99 @@
+{
+  "name": "dapp-dex-webui",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@amax/amaxjs": "^0.0.3",
+    "@amax/anchor-link": "^3.5.13",
+    "@amax/anchor-link-browser-transport": "^3.6.2",
+    "react-tradingview-widget": "1.3.2",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@reduxjs/toolkit": "^1.8.0",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.22",
+    "@types/node": "^18.11.0",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-redux": "^7.1.22",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/webpack-env": "^1.18.0",
+    "@wojtekmaj/react-datetimerange-picker": "^4.0.1",
+    "antd": "^4.23.6",
+    "babel-plugin-import": "^1.13.3",
+    "bignumber.js": "^1.1.0",
+    "classnames": "^2.3.2",
+    "copy-to-clipboard": "^3.3.2",
+    "crypto-js": "^4.1.1",
+    "customize-cra": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "dotenv-cli": "^5.1.0",
+    "eosjs": "^22.1.0",
+    "http-proxy-middleware": "^2.0.1",
+    "i18next": "^21.6.12",
+    "i18next-browser-languagedetector": "^6.1.3",
+    "qs": "^6.10.1",
+    "dayjs": "^1.11.3",
+    "query-string": "^7.1.1",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.1.8",
+    "react-copy-to-clipboard": "^5.0.4",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.15.5",
+    "react-outclick": "^0.0.4",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
+    "react-transition-group": "^4.4.2",
+    "redux": "^4.0.5",
+    "redux-react-hook": "^4.0.3",
+    "sass": "^1.51.0",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "2.4.0",
+    "style-resources-loader": "^1.4.1",
+    "styled-components": "^5.3.1",
+    "typescript": "^4.2.4",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "dotenv -e .env.dev react-app-rewired start",
+    "serve": "dotenv -e .env.dev react-app-rewired start",
+    "serve:uat": "dotenv -e .env.uat react-app-rewired start",
+    "serve:prod": "dotenv -e .env.prod react-app-rewired start",
+    "serve:dist": "cd dist && python3 -m http.server 5078",
+    "build:r": "react-scripts build",
+    "build": "dotenv -e .env.uat react-app-rewired build",
+    "build:prod": "dotenv -e .env.prod react-app-rewired build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/react-custom-scrollbars": "^4.0.7",
+    "@types/styled-components": "^5.1.13",
+    "axios": "^0.27.2",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-json-view": "^1.21.3",
+    "style-loader": "^3.0.0",
+    "vconsole": "^3.14.6"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es2015.collection",
+      "es2015.iterable",
+      "dom.iterable",
+      "esnext"
+    ],
+    "importHelpers": true,
+    "removeComments": true,
+    "allowJs": true,
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

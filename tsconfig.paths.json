@@ -1,0 +1,11 @@
+{
+   "compilerOptions": {
+      "baseUrl": "./src",
+      "forceConsistentCasingInFileNames": true,
+      "importHelpers": true,
+      "strict": true,
+      "paths": {
+         "@/*": ["*"]
+      }
+   }
+}

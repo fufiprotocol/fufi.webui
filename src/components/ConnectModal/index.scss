@@ -1,0 +1,15 @@
+.wallet-category-dialog{
+  .role-list{
+    border: 1px solid hsla(0, 0%, 59.2%, .2);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-family: Gilroy, sans-serif !important;
+  }
+}
+.mobile-model .wallet-category-dialog{
+  .role-list{
+    border: 0.02rem solid hsla(0, 0%, 59.2%, .2);
+    border-radius: 0.24rem;
+    padding: 0.2rem 0.4rem;
+  }
+}

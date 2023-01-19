@@ -1,0 +1,337 @@
+.web-home-container {
+  position: relative;
+  height: 100%;
+  color: #6f6e84;
+  font-size: 13px;
+  overflow: hidden;
+  .transform180{
+    transform: rotate(180deg);
+  }
+  .trading-pair-data{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    .trading-pair-list{
+      height: 100%;
+      min-width: 300px;
+      max-width: 300px;
+      background-color: #1c1c28;
+      border-right: 1px solid #2d2d3d;
+      .trading-pair-item{
+        padding:0 16px;
+        color: #f7f7f7;
+        background-color: #171722;
+        border-bottom: 1px solid #2d2d3d;
+        height: 60px;
+        width: 100%;
+      }
+    }
+    .trading-pair-blur{
+      height: 100%;
+      backdrop-filter: blur(6px);
+      flex: 1 1 100%;
+    }
+  }
+  .trading-pair-details{
+    display: flex;
+    min-height: 48px;
+    max-height: 48px;
+    border-bottom: 1px solid #2d2d3d;
+    white-space: nowrap;
+    .trading-pair{
+      width: 300px;
+      padding: 18px;
+      color: #c3c2d4;
+      cursor: pointer;
+      font-size: 16px;
+      border-right: 1px solid #2d2d3d;
+    }
+    .line{
+      width: 1px;
+      height: 24px;
+      background: #2d2d3d;
+    }
+  }
+  .usd-btn {
+    margin-left: 4px;
+    padding: 3px 6px;
+    background: #303044;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #c3c2d4;
+  }
+  .num-btn {
+    margin-left: 4px;
+    padding: 10px 6px;
+    line-height: 0;
+    height: auto;
+    background: #303044;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #c3c2d4;
+  }
+  .usd-big-btn{
+    padding: 0 10px;
+    margin-left: 6px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: #303044;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    font-size: 13px;
+    color: #c3c2d4;
+  }
+  .trade-opt-content {
+    padding: 20px 24px;
+
+    .sell-buy-tab {
+      display: flex;
+      position: relative;
+      height: 40px;
+      width: 100%;
+      border-radius: 6px;
+      background-color: #171722;
+      cursor: pointer;
+
+      .item {
+        width: 50%;
+        height: 100%;
+        line-height: 40px;
+        font-size: 14px;
+        text-align: center;
+        color: #6f6e84;
+        transition: color .2s ease-in-out;
+
+        &:first-child.active {
+          transition: all .2s ease-in-out;
+          border: 2px solid #ff5353;
+          background-color: #232334;
+          border-radius: 6px;
+          color: #ff5353;
+        }
+
+        &:last-child.active {
+          transition: all .2s ease-in-out;
+          border: 2px solid #3fb68b;
+          background-color: #232334;
+          border-radius: 6px;
+          color: #3fb68b;
+        }
+      }
+    }
+
+    .input-content {
+      font-size: 16px;
+      line-height: 20px;
+      height: 40px;
+      min-height: 40px;
+      display: flex;
+      justify-content: flex-end;
+      border-radius: 6px;
+      padding-left: 12px;
+      overflow: hidden;
+      background-color: #232334;
+      align-items: center;
+
+      input {
+        color: #f7f7f7;
+        background-color: #232334;
+        border: none;
+      }
+    }
+    .total-content{
+      border-radius: 8px;
+      font-weight: 500;
+      background: #171722;
+      .submit-btn{
+        background: #303044;
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        line-height: 40px;
+        height: 40px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+
+  .center-content {
+    height: calc(100% - 428px);
+  }
+
+  .bottom-content {
+    height: 380px;
+    border-top: 1px solid #2d2d3d;
+  }
+
+  .trade-side {
+    width: 300px;
+    color: #c3c2d4;
+    font-size: 13px;
+    overflow: hidden;
+    border-right: 1px solid #2d2d3d;
+
+    .green-line{
+      width: 1px;
+      background: #3fb68b;
+      height: 18px;
+      opacity: .4;
+    }
+
+    .red-line{
+      width: 1px;
+      background: #ff5353;
+      height: 18px;
+      opacity: .4;
+    }
+
+    .withdraw-btn {
+      background: #232334;
+      color: #c3c2d4;
+      font-size: 13px;
+      padding: 8px 12px;
+      border-radius: 24px;
+    }
+
+    .recharge-btn {
+      background: #5973fe;
+      color: #f7f7f7;
+      padding: 8px 12px;
+      font-size: 13px;
+      margin-left: 12px;
+      border-radius: 24px;
+    }
+  }
+
+  .trade-content {
+    width: 450px;
+
+    .txt-border {
+      cursor: pointer;
+      color: #7085ac;
+      border-bottom: 1px solid #7085ac;
+
+      &:hover {
+        color: #ffffff;
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+
+    .buy-btn {
+      background-color: #0ba88b;
+      height: 33px;
+      line-height: 33px;
+      margin-top: 8px;
+      width: 100%;
+      border-radius: 3px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .sell-btn {
+      background-color: #dd4b4c;
+      height: 33px;
+      line-height: 33px;
+      margin-top: 8px;
+      width: 100%;
+      border-radius: 3px;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+
+  .price-value {
+    padding: 0 8px;
+    height: 34px;
+    border-top: 1px solid #2d2d3d;
+    border-bottom: 1px solid #2d2d3d;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+
+    span {
+      color: #dd4b4c;
+    }
+  }
+
+  .num-input {
+    background: #2e3753;
+    padding: 1px;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #7085ac;
+    font-size: 12px;
+    position: relative;
+    height: 28px;
+    transition: .2s;
+
+    input {
+      border-radius: 3px;
+      padding: 0 6px;
+      display: block;
+      border: 1px solid #2e3753;
+      width: 100%;
+      box-sizing: border-box;
+      background: #1a243b;
+      height: 100%;
+      color: #e8e8e9;
+      font-size: 12px;
+
+      &:hover {
+        border: 1px solid #5761e4
+      }
+    }
+
+    .suffix {
+      position: absolute;
+      height: 16px;
+      line-height: 16px;
+      right: 6px;
+      top: 7px;
+    }
+  }
+
+
+  .tab-list {
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 44px;
+    font-size: 14px;
+    border-bottom: 1px solid #2d2d3d;
+    border-top: 1px solid #2d2d3d;
+
+    .tab-item {
+      font-size: 14px;
+      color: #6f6e84;
+      line-height: 44px;
+      text-align: center;
+      cursor: pointer;
+      height: 100%;
+      border-right: 1px solid #2d2d3d;
+      background: #1c1c28;
+
+    }
+
+    .tab-item.active {
+      background-color: #171722;
+      color: #f7f7f7;
+      position: relative;
+    }
+
+  }
+}

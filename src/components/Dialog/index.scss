@@ -1,0 +1,91 @@
+.public-dialog{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  backdrop-filter: blur(20px);
+  &.dialog-fade-in{
+    animation: .3s fade-in both ease-in;
+  }
+  &.dialog-fade-out{
+    animation: .3s fade-out both ease-in;
+  }
+  .public-dialog-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .public-modal-content{
+    z-index: 99;
+    width: 6.7rem;
+    max-height: 80vh;
+    background: #fff;
+    border: 0.02rem solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0rem 0.32rem 0.48rem rgba(160, 163, 189, 0.16);
+    border-radius: 0.48rem;
+    .content-title{
+      line-height: 1.2;
+      padding: 0.48rem;
+      .icon-close{
+        cursor: pointer;
+        height: 0.8rem;
+        width: 0.8rem;
+        background: url(./../../assets/images/common/icon_close.png) no-repeat center;
+        background-size: 70%;
+        opacity: 0.8;
+      }
+    }
+    .scroll-center{
+      flex: 1;
+      overflow-y: auto;
+    }
+  }
+}
+.web-model{
+  .public-modal-content{
+    width: 480px;
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #fff;
+    border: none;
+    box-shadow: 0px 16px 24px rgba(160, 163, 189, 0.16);
+    border-radius: 24px;
+    .content-title{
+      line-height: 1.2;
+      padding: 24px;
+      .icon-close{
+        height: 40px;
+        width: 40px;
+        background: url(./../../assets/images/common/icon_close.png) no-repeat center;
+        background-size: 70%;
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
